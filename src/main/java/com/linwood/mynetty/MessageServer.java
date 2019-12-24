@@ -21,6 +21,7 @@ public class MessageServer {
 				@Override
 				protected void initChannel(SocketChannel ch) throws Exception{
 					ch.pipeline().addLast(new NettyServerHandler());
+					
 				}
 			});
 			System.out.println("Netty Server Start");
